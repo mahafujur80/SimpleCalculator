@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.claculatorBody{
+    width: 300px;
+    min-height: 450px;
+    margin: 50px auto;
+    border: 2px solid rgb(33, 187, 192);
+    border-radius: 10px;
+    background-color: rgba(71, 71, 70, 0.918);
+}
+#myResult{
+    background-color: rgb(175, 240, 207);
+    color:rgba(37, 36, 36, 0.945);
+    padding: 15px;
+    width: 100%;
+    font-size: 25px;
+    outline: none;
+    border: 5px solid rgba(97, 101, 160, 0.534);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+table{
+ padding: 10px;
+}
+input[type="button"]{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    gap:5px;
+    width: 65px;
+    height: 55px;
+    font-size: 18px;
+    font-weight:550;
+    background-color: rgb(42, 171, 223);
+    box-shadow: 2px 2px  5px black;
+}
+input[type="button"]:hover{
+    background-color:rgb(6, 132, 182);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:768px){
+ .claculatorBody{
+     min-height: 95vh;
+     width: 400px;
+    }
+    input[type="button"]{
+        margin-bottom: 20px;
+    }
+    table{
+     margin-left: 15px;
+}
+}
+@media screen and (max-width:320px){
+    .claculatorBody{
+     min-height: 90vh;
+     width:100%;
+    }
+    input[type="button"]{
+    max-width: 65px;
+    height: 70px;
+    font-size: 18px;
+    }
+} 
